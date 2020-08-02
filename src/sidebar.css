@@ -1,0 +1,8 @@
+.sidebar {
+	float: left;
+	padding: 20px;
+}
+.avatar > img {
+	width: 126px;
+	height: 168px;
+}
