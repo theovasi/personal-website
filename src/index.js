@@ -10,8 +10,37 @@ class Sidebar extends React.Component {
 		return (
 			<div className="sidebar">
 				<div className="avatar">
-					<img src={require("./images/me.jpg")} alt="It's a me, Theo"/>
+					<img src={this.props.avatar} alt="It's a me, Theo"/>
 				</div>
+				<Menu />
+			</div>
+		)
+	}
+}
+
+class Menu extends React.Component {
+	render() {
+		return (
+			<div className="menu">
+				<MenuItem 
+					name="Intro"
+				/>
+				<MenuItem 
+					name="Projects"
+				/>
+				<MenuItem 
+					name="Resume"
+				/>
+			</div>
+		)
+	}
+}
+
+class MenuItem extends React.Component {
+	render() {
+		return (
+			<div className="menuItem">
+				{this.props.name}
 			</div>
 		)
 	}
@@ -20,9 +49,11 @@ class Sidebar extends React.Component {
 class Intro extends React.Component {
 	render() {
 		return (
-			<p>
-				Hello! My name is Theo. I am a software engineer.
-			</p>
+			<div className="intro">
+				<p>
+					Hello! My name is Theo. I am a software engineer.
+				</p>
+			</div>
 		)
 	}
 }
@@ -31,7 +62,9 @@ class LandingPage extends React.Component {
 	render() {
 		return (
 			<div className="container">
-				<Sidebar />
+				<Sidebar 
+					avatar={require("./images/me.jpg")}
+				/>
 				<Intro />
 			</div>
 		);

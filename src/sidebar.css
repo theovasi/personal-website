@@ -1,8 +1,24 @@
 .sidebar {
 	float: left;
-	padding: 20px;
+	width: 200px;
+	margin-top: 15px;
+}
+.avatar {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .avatar > img {
-	width: 126px;
-	height: 168px;
+	width: 180px;
+	height: 240px;
+	border-radius: 10px;
+	padding: 5px;
+}
+
+.menuItem {
+	height: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 5px;
 }
