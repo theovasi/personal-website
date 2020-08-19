@@ -10,7 +10,7 @@
 }
 .avatar > img {
 	width: 180px;
-	height: 240px;
+	 height: 240px;
 	border-radius: 10px;
 	padding: 5px;
 }
@@ -21,4 +21,21 @@
 	justify-content: center;
 	align-items: center;
 	margin: 5px;
+	text-decoration: none;
+}
+
+.linkIconContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.linkIcon {
+	float: left;
+	padding: 5px;
+}
+
+.linkIcon > a > img {
+	height: 35px;
+	width: 35px;
 }

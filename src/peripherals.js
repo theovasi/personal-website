@@ -1,6 +1,5 @@
 import React from "react";
 import {
-	BrowserRouter as Router,
 	Link
 } from "react-router-dom";
 
@@ -12,6 +11,11 @@ class Sidebar extends React.Component {
 					<img src={this.props.avatar} alt="It's a me, Theo"/>
 				</div>
 				<Menu />
+				<div className="linkIconContainer">
+					<LinkIcon link="https://github.com/theovasi" icon={require("./images/github.svg")} alt="Github icon"/>
+					<LinkIcon link="https://www.linkedin.com/in/theodorosvasileiadis/" icon={require("./images/linkedin.svg")} alt="Linkedin icon"/>
+					<LinkIcon link="https://stackoverflow.com/users/7268442/theo-vasileiadis" icon={require("./images/stackoverflow.svg")} alt="Stack Overflow icon"/>
+				</div>
 			</div>
 		)
 	}
@@ -21,18 +25,18 @@ class Menu extends React.Component {
 	render() {
 		return (
 			<div className="menu">
-				<Link to="/">
-					<MenuItem 
+				<Link to="/" className="menuItem">
+					<MenuItem
 						name="Intro"
 					/>
 				</Link>
-				<Link to="/projects">
-					<MenuItem 
+				<Link to="/projects" className="menuItem">
+					<MenuItem
 						name="Projects"
 					/>
 				</Link>
-				<Link to="/resume">
-					<MenuItem 
+				<Link to="/resume" className="menuItem">
+					<MenuItem
 						name="Resume"
 					/>
 				</Link>
@@ -44,25 +48,22 @@ class Menu extends React.Component {
 class MenuItem extends React.Component {
 	render() {
 		return (
-			<div className="menuItem">
+			<div>
 				{this.props.name}
 			</div>
 		)
 	}
 }
 
-class Intro extends React.Component {
+class LinkIcon extends React.Component {
 	render() {
 		return (
-			<div className="intro">
-				<p>
-					Hello! My name is Theo. I am a software engineer.
-				</p>
+			<div className="linkIcon">
+				<a href={this.props.link}><img src={this.props.icon} alt={this.props.alt}></img></a>
 			</div>
 		)
 	}
 }
-
 
 export {
 	Sidebar,

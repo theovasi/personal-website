@@ -2,9 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {
 	BrowserRouter as Router,
-	Switch,
 	Route,
-	Link
 } from "react-router-dom";
 
 import {Sidebar} from "./peripherals.js"
@@ -21,7 +19,7 @@ class App extends React.Component {
 		return (
 			<Router>
 				<div className="container">
-					<Sidebar 
+					<Sidebar
 						avatar={require("./images/me.jpg")}
 					/>
 					<Route exact path="/">
