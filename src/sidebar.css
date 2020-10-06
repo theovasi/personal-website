@@ -1,7 +1,11 @@
 .sidebar {
 	float: left;
-	width: 200px;
+	width: 180px;
 	margin-top: 15px;
+	border: 1px solid #e1e4e8;
+	border-radius: 6px;
+	background-color: #fafbfc;
+
 }
 .avatar {
 	display: flex;
@@ -10,9 +14,14 @@
 }
 .avatar > img {
 	width: 180px;
-	 height: 240px;
-	border-radius: 10px;
-	padding: 5px;
+	height: 240px;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	
+}
+
+a {
+	text-decoration: none;
 }
 
 .menuItem {
@@ -20,13 +29,26 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin: 5px;
+	padding: 5px;
 	text-decoration: none;
+	color: black;
+	border-bottom: 1px solid #e1e4e8;
+	box-shadow: 0 1px 0 rgba(27,31,35,.04), inset 0 1px 0 hsla(0,0%,100%,.25);
+}
+
+.menuItem:hover {
+	background-color: #f3f4f6;
+}
+
+.active {
+	padding-right: 0;
+	border-right: 5px solid #9ccbf5;
 }
 
 .linkIconContainer {
 	display: flex;
 	justify-content: center;
+	text-decoration: none;
 	align-items: center;
 }
 
@@ -36,6 +58,6 @@
 }
 
 .linkIcon > a > img {
-	height: 35px;
-	width: 35px;
+	height: 20px;
+	width: 20px;
 }

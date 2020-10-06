@@ -22,22 +22,33 @@ class Sidebar extends React.Component {
 }
 
 class Menu extends React.Component {
+	constructor(props) {
+		super(props);
+		this.state = {activeItem: ""};
+	}
+	setActive(itemName) {
+		this.setState({activeItem: itemName});
+	}
+
 	render() {
 		return (
 			<div className="menu">
-				<Link to="/" className="menuItem">
+				<Link to="/">
 					<MenuItem
-						name="Intro"
+						name="Intro" activeItem={this.state.activeItem}
+						onClick={this.setActive.bind(this)}
 					/>
 				</Link>
-				<Link to="/projects" className="menuItem">
+				<Link to="/projects">
 					<MenuItem
-						name="Projects"
+						name="Projects" activeItem={this.state.activeItem}
+						onClick={this.setActive.bind(this)}
 					/>
 				</Link>
-				<Link to="/resume" className="menuItem">
+				<Link to="/resume">
 					<MenuItem
-						name="Resume"
+						name="Resume" activeItem={this.state.activeItem}
+						onClick={this.setActive.bind(this)}
 					/>
 				</Link>
 			</div>
@@ -46,9 +57,15 @@ class Menu extends React.Component {
 }
 
 class MenuItem extends React.Component {
+	getClassName(itemName) {
+		console.log(this.props.activeItem);
+		console.log(itemName);
+		console.log(this.props.activeItem === itemName);
+		return "menuItem "+((this.props.activeItem === itemName) ? "active" : "");
+	}
 	render() {
 		return (
-			<div>
+			<div className={this.getClassName(this.props.name)} onClick={() => {this.props.onClick(this.props.name)}}>
 				{this.props.name}
 			</div>
 		)
