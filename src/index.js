@@ -10,6 +10,7 @@ import Intro from "./intro.js"
 import Resume from "./resume.js"
 import Projects from "./projects.js"
 
+import './main.css';
 import './intro.css';
 import './sidebar.css';
 import './landing_page.css';
@@ -25,11 +26,11 @@ class App extends React.Component {
 					<Route exact path="/">
 						<Intro />
 					</Route>
-					<Route path="/projects">
-						<Projects />
-					</Route>
 					<Route path="/resume">
 						<Resume />
+					</Route>
+					<Route path="/projects">
+						<Projects />
 					</Route>
 				</div>
 			</Router>

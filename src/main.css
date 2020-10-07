@@ -1,0 +1,21 @@
+.container {
+	width: 80%;
+	max-width: 1024px;
+	margin: 0;
+	position: absolute;
+	top: 5%;
+	left: 50%;
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+.mainContent {
+	margin-top: 15px;
+	margin-left: 200px;
+	text-align: center;
+	width: 100% - 200px;
+	background-color: #fafbfc;
+	border: 1px solid #e1e4e8;
+	border-radius: 6px;
+}
+

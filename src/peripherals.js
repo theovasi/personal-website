@@ -39,15 +39,15 @@ class Menu extends React.Component {
 						onClick={this.setActive.bind(this)}
 					/>
 				</Link>
-				<Link to="/projects">
-					<MenuItem
-						name="Projects" activeItem={this.state.activeItem}
-						onClick={this.setActive.bind(this)}
-					/>
-				</Link>
 				<Link to="/resume">
 					<MenuItem
 						name="Resume" activeItem={this.state.activeItem}
+						onClick={this.setActive.bind(this)}
+					/>
+				</Link>
+				<Link to="/projects">
+					<MenuItem
+						name="Projects" activeItem={this.state.activeItem}
 						onClick={this.setActive.bind(this)}
 					/>
 				</Link>
@@ -61,7 +61,11 @@ class MenuItem extends React.Component {
 		console.log(this.props.activeItem);
 		console.log(itemName);
 		console.log(this.props.activeItem === itemName);
-		return "menuItem "+((this.props.activeItem === itemName) ? "active" : "");
+		if (itemName === "Intro" && this.props.activeItem === "") {
+			return "menuItem active"
+		} else {
+			return "menuItem "+((this.props.activeItem === itemName) ? "active" : "");
+		}
 	}
 	render() {
 		return (

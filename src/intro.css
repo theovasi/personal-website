@@ -1,6 +1,14 @@
 .intro {
-	margin-right: 200px;
-	text-align: center;
-	width: 100%;
-	padding-top: 15px;
+	padding: 20px;
+}
+
+.intro p {
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 10px;
+	text-align: left;
+}
+
+.intro .contact {
+	padding-top: 40px;
 }

@@ -5,8 +5,10 @@ import './resume.css';
 class Resume extends React.Component {
 	render() {
 		return (
-			<div className="resume">
-				This is a resume!
+			<div className="mainContent">
+				<div className="resume">
+					This is a resume!
+				</div>
 			</div>
 		);
 	}
