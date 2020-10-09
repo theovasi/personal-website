@@ -8,7 +8,7 @@ class Intro extends React.Component {
 			<div className="mainContent">
 				<div className="intro">
 					<h3>
-						Hello! &#128075;
+						Hello! <span role="img" aria-label="Waving hand emoji">👋</span>
 					</h3>
 					<h4>
 						My name is Theo
