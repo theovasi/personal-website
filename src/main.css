@@ -13,7 +13,7 @@
 	margin-top: 15px;
 	margin-left: 200px;
 	text-align: center;
-	width: 100% - 200px;
+	width: calc(100% - 200px);
 	background-color: #fafbfc;
 	border: 1px solid #e1e4e8;
 	border-radius: 6px;
