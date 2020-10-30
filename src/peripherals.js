@@ -58,10 +58,13 @@ class Menu extends React.Component {
 
 class MenuItem extends React.Component {
 	getClassName(itemName) {
-		console.log(this.props.activeItem);
-		console.log(itemName);
-		console.log(this.props.activeItem === itemName);
-		if (itemName === "Intro" && this.props.activeItem === "") {
+		const urlItemArray = window.location.href.split("/");
+		const urlActiveItem = urlItemArray[urlItemArray.length-1];
+		console.log(urlActiveItem);
+		if (urlActiveItem === itemName.toLowerCase() && this.props.activeItem === "") {
+			return "menuItem active"
+		}
+		else if (itemName === "Intro" && this.props.activeItem === "" && urlActiveItem === "") {
 			return "menuItem active"
 		} else {
 			return "menuItem "+((this.props.activeItem === itemName) ? "active" : "");
