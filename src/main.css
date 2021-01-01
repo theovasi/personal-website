@@ -1,23 +1,25 @@
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 .container {
-	width: 80%;
+	margin-top: 5% !important;
 	max-width: 1024px;
-	margin: 0;
-	position: absolute;
-	top: 5%;
-	left: 50%;
-	-ms-transform: translateX(-50%);
-	transform: translateX(-50%);
+	margin: 0 auto;
 }
 
 .mainContent {
-	margin-top: 15px;
 	margin-left: 200px;
 	text-align: center;
-	width: calc(100% - 200px);
+	width: calc(100% - 199px);
 	background-color: #fafbfc;
 	border: 1px solid #e1e4e8;
 	border-radius: 6px;
-	padding: 10px;
 	height: auto;
 }
 
