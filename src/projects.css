@@ -1,14 +1,44 @@
-.projects {
-	margin-right: 200px;
-	text-align: center;
+.project {
+	display: grid;
 	width: 100%;
-	padding-top: 15px;
 }
 
-.project-demo {
-	padding: 20px;
+.project-demo-title {
+	float: left;
+	text-align: left;
+	padding-left: 10px;
+	font-size: 18px;
+	font-weight: bold;
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 1;
+	grid-row-end: 2;
+}
+
+.project-demo-gif {
+	float: left;
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 2;
+	grid-row-end: 3;
+}
+
+.project-demo-gif img{
+	max-width: 400px;;
+	max-height: 400px;
 }
 
 .project-demo-description {
-	padding-top: 20px;
+	float: right;
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 2;
+	grid-row-end: 3;
+	text-align: center;
+	display: flex;
+	align-items:center;
+	justify-content:center;
+}
+
+.project-demo-description p {
 }

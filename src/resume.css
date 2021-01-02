@@ -3,11 +3,9 @@
 	text-align: center;
 	width: 100%;
 	height: 100%;
-	padding-top: 15px;
 }
 
 .info {
-	margin: 20px;
 	display: grid;
 }
 
@@ -15,66 +13,75 @@
 	grid-column-start: 1;
 	grid-column-end: 2;
 	grid-row-start: 1;
-	grid-row-end: 2;
+	grid-row-end: 3;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: left;
 }
 
 .name p {
-	text-align: left;
 	font-size: 18px;
+	width: 100%;
 }
 
-.contact_details {
+.location {
+	text-align: right;
 	grid-column-start: 2;
 	grid-column-end: 3;
 	grid-row-start: 1;
 	grid-row-end: 2;
-	font-size: 16px;
+	font-size: 18px;
+	margin: 0;
 }
 
-.contact_details p {
+.email {
+	text-align: right;
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 2;
+	grid-row-end: 3;
+	font-size: 18px;
+	margin: 0;
+}
+
+.contact-details p {
 	clear: both;
 	text-align: right;
+	margin: 0;
 }
 
 .divider {
 	float: left;
-	width: 95%;
+	width: 100%;
 	height: 10px;
-	margin-left: 2.5%;
-	margin-right: 2.5%;
-	border-top: 1px solid black;
+	border-top: 2px solid #635bff;
 }
 
-.section_name {
+.resume .section-name {
 	float: left;
 	height: 20px;
 	width: 100%;
 	text-align: left;
-	margin-left: 20px;
-	font-size: 18px;
-	font-weight: bold;
 }
 
 .experience {
-	margin-left: 20px;
-	margin-right: 20px;
 	margin-top: 15px;
 	margin-bottom: 10px;
 	text-align: left;
 	float: left;
-	display: block;
-	border-left: 3px solid #e1e4e8;
-	border-radius: 6px;
+	border-left: 2px solid #635bff;
+	border-radius: 4px;
 	padding: 5px;
 }
 
 .wrapper-top {
 	float: left;
 	width: 3%;
-	margin-left: -5px;
+	margin-left: -6px;
 	margin-top: -5px;
-	border-top: 2px solid #e1e4e8;
-	border-radius: 10px;
+	border-top: 2px solid #635bff;
+	border-top-left-radius: 4px;
 
 }
 
@@ -82,10 +89,11 @@
 	height: 5px;
 	float: left;
 	width: 3%;
-	margin-left: -5px;
+	margin-left: -6px;
 	margin-bottom: -5px;
-	border-bottom: 2px solid #e1e4e8;
-	border-radius: 10px;
+	border-bottom: 2px solid #635bff;
+	border-bottom-left-radius: 4px;
+
 }
 
 .experience p {
@@ -116,20 +124,19 @@
 
 .skills {
 	float: left;
-	margin: 20px;
+	padding: 5px;
 	text-align: left;
 	font-size: 16px;
 }
 
 .resume-project {
 	width: 100%;
-	margin-left: 20px;
 	margin-top: 15px;
 	margin-bottom: 10px;
 	float: left;
 	display: block;
-	border-left: 3px solid #e1e4e8;
-	border-radius: 6px;
+	border-left: 2px solid #635bff;
+	border-radius: 4px;
 	padding: 5px;
 }
 

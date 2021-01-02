@@ -1,6 +1,7 @@
 import React from 'react';
 
 import './resume.css';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 class Resume extends React.Component {
 	render() {
@@ -9,13 +10,11 @@ class Resume extends React.Component {
 				<div className="resume">
 					<div className="info">
 						<div className="name"><p>Theodoros Vasileiadis</p></div>
-						<div className="contact_details">
-							<p>London, UK</p>
-							<p>theo.vasileiadis.work@gmail.com</p>
-						</div>
+						<p className="location">London, UK</p>
+						<p className="email">theo.vasileiadis.work@gmail.com</p>
 					</div>
 					<div className="divider"/>
-					<div className="section_name">Experience</div>
+					<div className="section-name">Experience</div>
 					<Experience company="Amadeus" role="Software Development Engineer - Graduate"
 								startDate="May 2019" endDate="Present"
 								description="Focused on the back-end of the company's customer management solution that orchestrates the world's air travel. Contributed effectively following a service based architecture to deliver an industry leading product that offers a wide feature set while maintaining high availability"
@@ -26,13 +25,11 @@ class Resume extends React.Component {
 								description="Contributed to a system that allows mobilisation authorities to manage Hellenic Army reserves and resources, schedule training exercises and mobilise reserves in case of emergency. The rest is classified."
 								technologies={["Java", "JavaScript"]}
 					/>
-					<div className="divider"/>
-					<div className="section_name">Skills</div>
+					<div className="section-name">Skills</div>
 					<Skills skills={["Python", "C++", "Java", "JavaScript", "React", "HTML/CSS", "pytest", "git", "SciPy",
 									 "Machine Learning", "Natural Language Processing", "Test Driven Development",
 									 "Agile Software Development"]}/>
-					<div className="divider"/>
-					<div className="section_name">Projects</div>
+					<div className="section-name">Projects</div>
 					<Project name="browseWiki" description="Developed performant NLP pipeline to represent text documents in a topic based vector space. Developed web application for browsing Wikipedia using the Scatter/Gather search engine approach."
 							 technologies={["Python", "Flask", "Scikit-learn"]}/>
 					<Project name="go" description="An implementation of the Chinese board game Go that implements game decision making algorithms to let users play against an intelligent computer opponent."
