@@ -33,7 +33,7 @@ class Project extends React.Component {
 				<div className="project-gif">
 					<img src={this.props.projectDemo} alt={this.props.alt}/>
 				</div>
-				<div className="project-description">
+				<div className="project-demo-description">
 					{this.props.description}
 				</div>
 			</div>

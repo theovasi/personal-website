@@ -28,7 +28,7 @@
 	grid-column-end: 3;
 	grid-row-start: 1;
 	grid-row-end: 2;
-	font-size: 14px;
+	font-size: 16px;
 }
 
 .contact_details p {
@@ -122,6 +122,7 @@
 }
 
 .resume-project {
+	width: 100%;
 	margin-left: 20px;
 	margin-top: 15px;
 	margin-bottom: 10px;
@@ -140,11 +141,12 @@
 }
 
 .project-name {
-	width: 100%;
+	width: 95%;
 }
 
 .project-description {
 	font-size: 15px;
+	width: 95%;
 }
 
 .project-technologies {

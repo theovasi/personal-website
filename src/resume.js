@@ -42,6 +42,8 @@ communication between two users."
 							 technologies={["Java"]}/>
 					<Project name="crush" description="A clone of the candy crush game that runs on FPGA boards."
 							 technologies={["VHDL"]}/>
+					<Project name="cryptoMsg" description="A clone of the candy crush game that runs on FPGA boards."
+							 technologies={["Java"]}/>
 				</div>
 			</div>
 		);
