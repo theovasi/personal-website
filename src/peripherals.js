@@ -60,7 +60,6 @@ class MenuItem extends React.Component {
 	getClassName(itemName) {
 		const urlItemArray = window.location.href.split("/");
 		const urlActiveItem = urlItemArray[urlItemArray.length-1];
-		console.log(urlActiveItem);
 		if (urlActiveItem === itemName.toLowerCase() && this.props.activeItem === "") {
 			return "menuItem active"
 		}

@@ -1,5 +1,6 @@
 import React from 'react';
 
+import './main.css';
 import './projects.css';
 
 class Projects extends React.Component {
@@ -10,10 +11,12 @@ class Projects extends React.Component {
 					<Project title="BrowseWiki" projectDemo={require("./images/placeholder.gif")} alt="Project demo"
 						description="An example of browsing the english version of wikipedia using browseWiki"
 					/>
-					<Project title="Go" projectDemo={require("./images/placeholder.gif")} alt="Project demo"
+					<div className="divider"/>
+					<Project title="Go" projectDemo={require("./images/go.gif")} alt="Project demo"
 						description="A game of go versus a Monte Carlo search based opponent"
 					/>
-					<Project title="cryptoMsg" projectDemo={require("./images/placeholder.gif")} alt="Project demo"
+					<div className="divider"/>
+					<Project title="cryptoMsg" projectDemo={require("./images/cryptoMsg.gif")} alt="Project demo"
 						description="Example of an encrypted conversation"
 					/>
 				</div>

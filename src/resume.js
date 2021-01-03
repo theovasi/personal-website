@@ -1,6 +1,9 @@
 import React from 'react';
+import { v4 as uuidv4 } from 'uuid';
 
+import './main.css';
 import './resume.css';
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faMap, faBuilding, faCalendar, faFileCode, faFolder } from "@fortawesome/free-regular-svg-icons";
 
@@ -67,14 +70,14 @@ class Skills extends React.Component {
 	render() {
 		const skills_bullet_list = [];
 		for (let i=0; i<this.props.skills.length; i++) {
-			skills_bullet_list.push(<span>{this.props.skills[i]}</span>);
+			skills_bullet_list.push(<span key={ uuidv4() }>{this.props.skills[i]}</span>);
 			if (i !== this.props.skills.length-1) {
-				skills_bullet_list.push(<span role="img" aria-label="Bullet point"> • </span>);
+				skills_bullet_list.push(<span key={ uuidv4() } role="img" aria-label="Bullet point"> • </span>);
 			}
 		}
 
 		return (
-			<div className="skills">
+			<div className="skills" key={ uuidv4() } >
 				{skills_bullet_list}
 			</div>
 		)

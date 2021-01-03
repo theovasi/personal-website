@@ -11,8 +11,6 @@ import Intro from "./intro.js"
 import Resume from "./resume.js"
 import Projects from "./projects.js"
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 import './main.css';
 import './intro.css';
 import './sidebar.css';
