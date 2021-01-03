@@ -8,8 +8,10 @@ class Intro extends React.Component {
 		return (
 			<div className="mainContent">
 				<div className="intro">
-					<div className="section-name">
-						Hello! <span role="img" aria-label="Waving hand emoji">👋</span>
+					<div className="header">
+						<div className="section-name">
+							Hello! <span role="img" aria-label="Waving hand emoji">👋</span> My name is Theo.
+						</div>
 					</div>
 					<p>
 						I am a software engineer currently working for a travel software company called Amadeus. There I write
