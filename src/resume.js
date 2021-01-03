@@ -2,6 +2,7 @@ import React from 'react';
 
 import './resume.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope, faMap, faBuilding, faCalendar, faFileCode, faFolder } from "@fortawesome/free-regular-svg-icons";
 
 class Resume extends React.Component {
 	render() {
@@ -10,8 +11,8 @@ class Resume extends React.Component {
 				<div className="resume">
 					<div className="info">
 						<div className="name"><p>Theodoros Vasileiadis</p></div>
-						<p className="location">London, UK</p>
-						<p className="email">theo.vasileiadis.work@gmail.com</p>
+						<p className="location"><FontAwesomeIcon icon={faMap}/> London, UK</p>
+						<p className="email"><FontAwesomeIcon icon={faEnvelope}/> theo.vasileiadis.work@gmail.com</p>
 					</div>
 					<div className="divider"/>
 					<div className="section-name">Experience</div>
@@ -52,10 +53,10 @@ class Experience extends React.Component {
 		return (
 			<div className="resumeSection experience">
 				<div className="wrapper-top"/>
-				<p className="role">{this.props.company}: {this.props.role}</p>
-				<p className="duration">{this.props.startDate} - {this.props.endDate}</p>
+				<p className="role"><FontAwesomeIcon icon={faBuilding}/> {this.props.company}: {this.props.role}</p>
+				<p className="duration"><FontAwesomeIcon icon={faCalendar}/> {this.props.startDate} - {this.props.endDate}</p>
 				<p className="description">{this.props.description}</p>
-				<p className="technologies">{this.props.technologies.join(" / ")}</p>
+				<p className="technologies"><FontAwesomeIcon icon={faFileCode}/> {this.props.technologies.join(" / ")}</p>
 				<div className="wrapper-bottom"/>
 			</div>
 		)
@@ -85,9 +86,9 @@ class Project extends React.Component {
 		return (
 			<div className="resume-project">
 				<div className="wrapper-top"/>
-				<p className="project-name">{this.props.name}</p>
+				<p className="project-name"><FontAwesomeIcon icon={faFolder}/> {this.props.name}</p>
 				<p className="project-description">{this.props.description}</p>
-				<p className="project-technologies">{this.props.technologies.join(" / ")}</p>
+				<p className="project-technologies"><FontAwesomeIcon icon={faFileCode}/> {this.props.technologies.join(" / ")}</p>
 				<div className="wrapper-bottom"/>
 			</div>
 		)
