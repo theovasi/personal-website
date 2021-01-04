@@ -21,12 +21,12 @@ class Resume extends React.Component {
 					<div className="section-name">Experience</div>
 					<Experience company="Amadeus" role="Software Development Engineer - Graduate"
 								startDate="May 2019" endDate="Present"
-								description="Focused on the back-end of the company's customer management solution that orchestrates the world's air travel. Contributed effectively following a service based architecture to deliver an industry leading product that offers a wide feature set while maintaining high availability"
+								description="Focused on the back-end of the company's check-in and passenger management solution that orchestrates the world's air travel. Contributed effectively following a service based architecture to deliver an industry leading product that offers a wide feature set while maintaining high availability"
 								technologies={["C++", "Python"]}
 					/>
 					<Experience company="Hellenic Army General Staff" role="Software Engineer"
 								startDate="May 2018" endDate="December 2018"
-								description="Contributed to a system that allows mobilisation authorities to manage Hellenic Army reserves and resources, schedule training exercises and mobilise reserves in case of emergency. The rest is classified."
+								description="Contributed to the personel management system that allows mobilisation authorities to organise Hellenic Army reserves and resources, schedule training exercises and mobilise reserves in case of emergency."
 								technologies={["Java", "JavaScript"]}
 					/>
 					<div className="section-name">Skills</div>
@@ -34,17 +34,15 @@ class Resume extends React.Component {
 									 "Machine Learning", "Natural Language Processing", "Test Driven Development",
 									 "Agile Software Development"]}/>
 					<div className="section-name">Projects</div>
-					<Project name="browseWiki" description="Developed performant NLP pipeline to represent text documents in a topic based vector space. Developed web application for browsing Wikipedia using the Scatter/Gather search engine approach."
+					<Project name="browseWiki" description="Developed performant NLP pipeline to generate representations for text documents in a topic based vector space. Developed web a application for browsing Wikipedia using the Scatter/Gather search engine approach."
 							 technologies={["Python", "Flask", "Scikit-learn"]}/>
-					<Project name="go" description="An implementation of the Chinese board game Go that implements game decision making algorithms to let users play against an intelligent computer opponent."
+					<Project name="go" description="Implementation of the Chinese board game Go that implements a MonteCarlo based game decision making algorithm to let users play against an intelligent computer opponent."
 							 technologies={["Java"]}/>
 					<Project name="cryptoMsg" description="Text chat application that uses the RSA cryptosystem to enable encrypted
 communication between two users."
 							 technologies={["Java"]}/>
-					<Project name="crush" description="A clone of the candy crush game that runs on FPGA boards."
+					<Project name="crush" description="Clone of the candy crush game that runs on FPGA boards. Developed hardware controllers for the display and the keyboard input."
 							 technologies={["VHDL"]}/>
-					<Project name="cryptoMsg" description="A clone of the candy crush game that runs on FPGA boards."
-							 technologies={["Java"]}/>
 				</div>
 			</div>
 		);

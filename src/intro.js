@@ -14,10 +14,10 @@ class Intro extends React.Component {
 						</div>
 					</div>
 					<p>
-						I am a software engineer currently working for a travel software company called Amadeus. There I write
-						mainly backend code (C++ and Python) for high-availability mission critical applications that handle
-						millions of passengers daily to make air travel possible. One might also catch me doing some frontend
-						work primarily using Angular.
+						I am a software engineer currently working for a travel software company called Amadeus. There I contribute
+						to the industry-leading check-in and passenger management system, a mission critical application that handles
+						more than a billion passengers a year at 99.99% SLA. Mainly I code in C++ and Python but one ne might also
+						catch me doing some frontend work primarily using Angular.
 					</p>
 					<p>
 						I am always eager to learn new things around software and I like to work on personal projects to experiment
