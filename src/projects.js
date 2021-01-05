@@ -8,7 +8,7 @@ class Projects extends React.Component {
 		return (
 			<div className="mainContent">
 				<div className="projects">
-					<Project title="BrowseWiki" projectDemo={require("./images/placeholder.gif")} alt="Project demo"
+					<Project title="BrowseWiki" projectDemo={require("./images/browsewiki.gif")} alt="Project demo"
 						description="An example of browsing the english version of wikipedia. Initially the user is presented with a set of article categories which can be examined on the right. Then by selecting a number of categories and clicking browse the user can pick the topic or topics that are of interest and explore those further."
 					/>
 					<div className="divider"/>
