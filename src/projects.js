@@ -13,7 +13,7 @@ class Projects extends React.Component {
 					/>
 					<div className="divider"/>
 					<Project title="Go" projectDemo={require("./images/go.gif")} alt="Project demo"
-						description="A game of go versus a Monte Carlo search based opponent. The opponent is able to look a number of moves ahead and make smart decisions to maximise the territory it occupies on the board."
+						description="A game of go versus a Monte Carlo search based opponent. The opponent is able to look a number of moves ahead and make smart decisions to maximize the territory it occupies on the board."
 					/>
 					<div className="divider"/>
 					<Project title="cryptoMsg" projectDemo={require("./images/cryptoMsg.gif")} alt="Project demo"

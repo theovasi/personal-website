@@ -59,7 +59,7 @@
 	margin-top: 10px;
 }
 
-.experience {
+.experience, .education {
 	margin-top: 15px;
 	margin-bottom: 10px;
 	text-align: left;
@@ -95,7 +95,12 @@
 	margin-bottom: 5px;
 }
 
-.role {
+.education p {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.role, .school {
 	float: left;
 }
 

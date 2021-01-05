@@ -18,15 +18,21 @@ class Resume extends React.Component {
 						<p className="email"><FontAwesomeIcon icon={faEnvelope}/> theo.vasileiadis.work@gmail.com</p>
 					</div>
 					<div className="divider"/>
+					<div className="section-name">Education</div>
+					<Education school="Democritus University"
+								degree="Electrical and Computer Engineering"
+								startDate="October 2012" endDate="March 2018"
+								description="Graduated with honours (Λίαν Καλώς) from the School of Engineering. Received a Master of Science degree."
+					/>
 					<div className="section-name">Experience</div>
 					<Experience company="Amadeus" role="Software Development Engineer - Graduate"
 								startDate="May 2019" endDate="Present"
-								description="Focused on the back-end of the company's check-in and passenger management solution that orchestrates the world's air travel. Contributed effectively following a service based architecture to deliver an industry leading product that offers a wide feature set while maintaining high availability"
+								description="Focused on the back-end of the company's check-in and passenger management solution that orchestrates the world's air travel. Contributed effectively following a service based architecture to deliver an industry leading product that offers a wide feature set while maintaining high availability."
 								technologies={["C++", "Python"]}
 					/>
 					<Experience company="Hellenic Army General Staff" role="Software Engineer"
 								startDate="May 2018" endDate="December 2018"
-								description="Contributed to the personel management system that allows mobilisation authorities to organise Hellenic Army reserves and resources, schedule training exercises and mobilise reserves in case of emergency."
+								description="Contributed to the personnel management system that allows mobilisation authorities to organise Hellenic Army reserves and resources, schedule training exercises and mobilise reserves in case of emergency."
 								technologies={["Java", "JavaScript"]}
 					/>
 					<div className="section-name">Skills</div>
@@ -58,6 +64,20 @@ class Experience extends React.Component {
 				<p className="duration"><FontAwesomeIcon icon={faCalendar}/> {this.props.startDate} - {this.props.endDate}</p>
 				<p className="description">{this.props.description}</p>
 				<p className="technologies"><FontAwesomeIcon icon={faFileCode}/> {this.props.technologies.join(" / ")}</p>
+				<div className="wrapper-bottom"/>
+			</div>
+		)
+	}
+}
+
+class Education extends React.Component {
+	render() {
+		return (
+			<div className="resumeSection education">
+				<div className="wrapper-top"/>
+				<p className="school"><FontAwesomeIcon icon={faBuilding}/> {this.props.school}: {this.props.degree}</p>
+				<p className="duration"><FontAwesomeIcon icon={faCalendar}/> {this.props.startDate} - {this.props.endDate}</p>
+				<p className="description">{this.props.description}</p>
 				<div className="wrapper-bottom"/>
 			</div>
 		)

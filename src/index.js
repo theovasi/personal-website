@@ -12,9 +12,7 @@ import Resume from "./resume.js"
 import Projects from "./projects.js"
 
 import './main.css';
-import './intro.css';
-import './sidebar.css';
-import './landing_page.css';
+import './peripherals.css';
 
 class App extends React.Component {
 	render() {

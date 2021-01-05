@@ -7,7 +7,7 @@ body {
   -ms-overflow-style: none;
   scrollbar-width: none;
 	font-family: Helvetica;
-	touch-action: auto;
+	color: #0a2540 !important;
 }
 
 .container {
@@ -20,7 +20,6 @@ body {
 	padding: 10px;
 	margin-left: 200px;
 	text-align: center;
-	color: #0a2540;
 	width: calc(100% - 219px);
 	background-color: #fafbfc;
 	border: 1px solid #e1e4e8;
