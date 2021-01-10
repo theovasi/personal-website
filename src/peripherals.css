@@ -1,6 +1,5 @@
 .sidebar {
 	float: left;
-	position: fixed;
 	width: 180px;
 	border-radius: 6px;
 	background-color: #fafbfc;
@@ -39,7 +38,7 @@ a {
 	align-items: center;
 	padding: 5px;
 	text-decoration: none;
-	color: black;
+	color: #0a2540 !important;
 	border-bottom: 1px solid #e1e4e8;
 }
 
@@ -67,4 +66,30 @@ a {
 .linkIcon > a > img {
 	height: 20px;
 	width: 20px;
+}
+
+.resume-download {
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+	text-decoration: none;
+	align-items: center;
+	float: left;
+	clear: left;
+	height: 30px;
+	width: 180px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-radius: 6px;
+	background-color: #fafbfc;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.resume-download a {
+	text-decoration: none;
+	color: #0a2540 !important;
+}
+
+.resume-download:hover {
+	background-color: #f3f4f6;
 }

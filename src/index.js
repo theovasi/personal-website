@@ -6,7 +6,7 @@ import {
 } from "react-router-dom";
 import {CookiesProvider} from 'react-cookie';
 
-import {Sidebar} from "./peripherals.js"
+import {Sidebar, ResumeDownload} from "./peripherals.js"
 import Intro from "./intro.js"
 import Resume from "./resume.js"
 import Projects from "./projects.js"
@@ -20,16 +20,26 @@ class App extends React.Component {
 			<CookiesProvider>
 				<Router>
 					<div className="container">
-						<Sidebar
-							avatar={require("./images/me.jpg")}
-						/>
 						<Route exact path="/">
+							<Sidebar
+								key={window.location.href}
+								avatar={require("./images/me.jpg")} url={window.location.href}
+							/>
 							<Intro />
 						</Route>
 						<Route path="/resume">
+							<Sidebar
+								key={window.location.href}
+								avatar={require("./images/me.jpg")} url={window.location.href}
+							/>
+							<ResumeDownload />
 							<Resume />
 						</Route>
 						<Route path="/projects">
+							<Sidebar
+								key={window.location.href}
+								avatar={require("./images/me.jpg")} url={window.location.href}
+							/>
 							<Projects />
 						</Route>
 					</div>

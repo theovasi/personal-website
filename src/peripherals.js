@@ -3,6 +3,9 @@ import {
 	Link
 } from "react-router-dom";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowAltCircleDown } from "@fortawesome/free-regular-svg-icons";
+
 class Sidebar extends React.Component {
 	render() {
 		return (
@@ -88,7 +91,18 @@ class LinkIcon extends React.Component {
 	}
 }
 
+class ResumeDownload extends React.Component {
+	render() {
+		return (
+			<div className="resume-download">
+			<a href={require("./files/resume.pdf")} download="resume_theo_vasileiadis.pdf">Download resume <FontAwesomeIcon icon={faArrowAltCircleDown}/></a>	
+			</div>
+		)
+	}
+}
+
 export {
 	Sidebar,
+	ResumeDownload,
 	Menu
 }
