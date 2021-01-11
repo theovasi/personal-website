@@ -5,6 +5,18 @@
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
-    ]
+    ],
+		"redirects": [
+			{
+				"source": "/resume",
+				"destination": "/",
+				"type": 301
+			},
+			{
+				"source": "/projects",
+				"destination": "/",
+				"type": 301
+			}
+		]
   }
 }
